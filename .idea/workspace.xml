@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af1a0e8c-55a2-409a-807e-0150b1ff4a74" name="Default Changelist" comment="" />
+    <list default="true" id="af1a0e8c-55a2-409a-807e-0150b1ff4a74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Manage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Manage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Manage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Manage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Student.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +27,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -27,6 +44,7 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1k9GotShfvQ3fGZo91E2EBVdZGM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -34,6 +52,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -45,9 +64,16 @@
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="StudentManage" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="StudentManage" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -56,6 +82,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -84,7 +111,10 @@
       <workItem from="1605105572807" duration="2157000" />
       <workItem from="1605146875783" duration="3854000" />
       <workItem from="1605166368891" duration="461000" />
-      <workItem from="1605185382393" duration="6849000" />
+      <workItem from="1605185382393" duration="9649000" />
+      <workItem from="1605228742267" duration="2068000" />
+      <workItem from="1605232444829" duration="1881000" />
+      <workItem from="1605266986586" duration="691000" />
     </task>
     <servers />
   </component>
@@ -100,22 +130,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="367" y="363" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1605148655283" />
-    <state width="914" height="286" key="GridCell.Tab.0.bottom" timestamp="1605191742345">
+    <state width="914" height="286" key="GridCell.Tab.0.bottom" timestamp="1605267369591">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1605191742345" />
-    <state width="914" height="286" key="GridCell.Tab.0.center" timestamp="1605191742345">
+    <state width="914" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1605267369591" />
+    <state width="914" height="286" key="GridCell.Tab.0.center" timestamp="1605267369590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="286" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1605191742345" />
-    <state width="914" height="286" key="GridCell.Tab.0.left" timestamp="1605191742344">
+    <state width="914" height="286" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1605267369590" />
+    <state width="914" height="286" key="GridCell.Tab.0.left" timestamp="1605267369589">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="286" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1605191742344" />
-    <state width="914" height="286" key="GridCell.Tab.0.right" timestamp="1605191742345">
+    <state width="914" height="286" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1605267369589" />
+    <state width="914" height="286" key="GridCell.Tab.0.right" timestamp="1605267369590">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="914" height="286" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1605191742345" />
+    <state width="914" height="286" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1605267369590" />
     <state width="914" height="353" key="GridCell.Tab.1.bottom" timestamp="1605191272267">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -136,10 +166,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="134" y="163" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1605106606502" />
-    <state x="126" y="186" width="930" height="715" key="dock-window-1" timestamp="1605191423994">
+    <state x="451" y="543" width="930" height="715" key="dock-window-1" timestamp="1605267689675">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="126" y="186" width="930" height="715" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1605191423994" />
+    <state x="451" y="543" width="930" height="715" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1605267689675" />
+    <state x="1015" y="305" key="extract.method.dialog" timestamp="1605229376498">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1015" y="305" key="extract.method.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1605229376498" />
     <state x="750" y="268" key="run.anything.popup" timestamp="1605152060509">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -1,5 +1,3 @@
-
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -16,17 +14,36 @@ public class Manage {
     }
 
     // 添加
-    public void addStudent(Student stu) {
-        // 判断id是否重复
-        for(int i = 0;i < students.size();i++) {
-            if(students.get(i).getId().equals(stu.getId())) {
-                System.out.println("抱歉,该学生已存在!");
+    public void addStudent(ArrayList<Student> students) {
+
+        String ID = "";
+        while(true) {
+            boolean flag = true;
+            // 判断id是否重复
+            System.out.print("输入学号:");
+            ID = scanner.next();
+            for(int i = 0;i < students.size();i++) {
+                if(students.get(i).getId().equals(ID)) {
+                    System.out.println("抱歉,该学号已存在!");
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag) {
                 break;
             }
-            students.add(stu);
-            System.out.println("添加成功!");
-            break;
         }
+        System.out.print("输入姓名:");
+        String Aname = scanner.next();
+        System.out.print("输入语文成绩:");
+        int Achinese = scanner.nextInt();
+        System.out.print("输入数学成绩:");
+        int Amath = scanner.nextInt();
+        System.out.print("输入英语成绩:");
+        int Aenglish = scanner.nextInt();
+        Student student1 = new Student(Aname,ID,Achinese,Amath,Aenglish);
+        students.add(student1);
+        System.out.println("添加成功!");
     }
 
     // 删除
@@ -47,6 +64,8 @@ public class Manage {
                 } else {
                     System.out.println("已取消");
                 }
+            } else {
+                System.out.println("没有找到该学生,请确认输入的学号是否正确!");
             }
         }
     }
@@ -56,7 +75,6 @@ public class Manage {
         if(students.size() == 0) {
             System.out.println("抱歉,没有找到该学生");
         }
-
         for (int i = 0; i < students.size(); i++) {
             if(students.get(i).getId().equals(Id)) {
                 System.out.printf("查找到符合要求的学生:\n"+students.get(i).toString()+"\n");
@@ -122,7 +140,58 @@ public class Manage {
     // 显示选项即开始界面
     public void show() {
         System.out.println("---------------------------------------------------");
-        System.out.println("1-显示 2-查询 3-增加 4-删除 5-修改 0-退出");
+        System.out.println("1-显示 2-查询 3-增加 4-删除 5-修改 6-排名 0-退出");
         System.out.println("---------------------------------------------------");
+    }
+
+    // 学生排序
+    public void studentSort(ArrayList<Student> students) {
+        System.out.println("排名依据:1-语文成绩 2-数学成绩 3-英语成绩 4-总成绩");
+        System.out.print("请选择:");
+        int sortChoice = scanner.nextInt();
+        int lastExchangIndex = 0;
+        int sortBoard = students.size()-1;
+        for(int i = 0;i < students.size()-1;i++) {
+            boolean isSorted = true;
+            for(int j = 0;j < sortBoard;j++) {
+                if(sortChoice == 1) {
+                    if(students.get(j).getChinese() < students.get(j+1).getChinese()) {
+                        Student temp = students.get(j);
+                        students.set(j,students.get(j+1));
+                        students.set(j+1,temp);
+                        isSorted = false;
+                        lastExchangIndex = j;
+                    }
+                }else if(sortChoice == 2) {
+                    if(students.get(j).getMath() < students.get(j+1).getMath()) {
+                        Student temp = students.get(j);
+                        students.set(j,students.get(j+1));
+                        students.set(j+1,temp);
+                        isSorted = false;
+                        lastExchangIndex = j;
+                    }
+                }else if(sortChoice == 3) {
+                    if(students.get(j).getEnglish() < students.get(j+1).getEnglish()) {
+                        Student temp = students.get(j);
+                        students.set(j,students.get(j+1));
+                        students.set(j+1,temp);
+                        isSorted = false;
+                        lastExchangIndex = j;
+                    }
+                }else if(sortChoice == 4) {
+                    if (students.get(j).getTotal() < students.get(j + 1).getTotal()) {
+                        Student temp = students.get(j);
+                        students.set(j, students.get(j + 1));
+                        students.set(j + 1, temp);
+                        isSorted = false;
+                        lastExchangIndex = j;
+                    }
+                }
+            }
+            if(isSorted) {
+                break;
+            }
+            sortBoard = lastExchangIndex;
+        }
     }
 }

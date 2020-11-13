@@ -1,5 +1,3 @@
-
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -27,18 +25,7 @@ public class Main {
                     manage.query(QueryName);
                     break;
                 case 3:
-                    System.out.print("输入姓名:");
-                    String Aname = in.next();
-                    System.out.print("输入学号:");
-                    String Aid = in.next();
-                    System.out.print("输入语文成绩:");
-                    int Achinese = in.nextInt();
-                    System.out.print("输入数学成绩:");
-                    int Amath = in.nextInt();
-                    System.out.print("输入英语成绩:");
-                    int Aenglish = in.nextInt();
-                    Student student1 = new Student(Aname,Aid,Achinese,Amath,Aenglish);
-                    manage.addStudent(student1);
+                    manage.addStudent(list);
                     break;
                 case 4:
                     System.out.print("请输入想要删除的学生学号:");
@@ -49,6 +36,12 @@ public class Main {
                     System.out.print("请输入想要修改的学生学号:");
                     String ModifyID = in.next();
                     manage.modifyStudy(ModifyID);
+                    break;
+                case 6:
+                    manage.studentSort(list);
+                    for (Student k:list) {
+                        System.out.println(k.toString());
+                    }
                     break;
                 case 0:
                     flag = false;

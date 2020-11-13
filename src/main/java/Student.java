@@ -4,6 +4,7 @@ public class Student {
     private int chinese;
     private int math;
     private int english;
+    private int total;
 
     public Student(String Sname,String SID,int Schinese,int Smath,int Senglish) {
        this.name = Sname;
@@ -11,6 +12,7 @@ public class Student {
        this.chinese = Schinese;
        this.math = Smath;
        this.english = Senglish;
+       this.total = Schinese + Smath +Senglish;
     }
 
     public String getName() {
@@ -53,12 +55,17 @@ public class Student {
         this.english = english;
     }
 
+    public int getTotal() {
+        return total;
+    }
+
     @Override
     public String toString() {
         return "姓名:" + name +
                 ", 学号:" + id  +
                 ", 语文成绩:" + chinese +
                 ", 数学成绩:" + math +
-                ", 英语成绩:" + english ;
+                ", 英语成绩:" + english +
+                ", 总成绩:" + total;
     }
 }

@@ -1,3 +1,5 @@
+package simple;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -48,12 +50,13 @@ public class Manage {
 
     // 删除
     public void delStudent(String id) {
-        System.out.println("正在查询...");
+        boolean isFind = true;
         if(students.size() == 0) {
             System.out.println("抱歉,没有找到该学生!");
         }
         for (int i = 0; i < students.size(); i++) {
             if(students.get(i).getId().equals(id)) {
+                isFind = false;
                 System.out.println(students.get(i).toString());
                 System.out.println("是否确认删除Y/N");
                 System.out.print("请选择:");
@@ -64,9 +67,10 @@ public class Manage {
                 } else {
                     System.out.println("已取消");
                 }
-            } else {
-                System.out.println("没有找到该学生,请确认输入的学号是否正确!");
             }
+        }
+        if(isFind) {
+            System.out.println("没有找到该学生,请确认输入的学号是否正确!");
         }
     }
 
@@ -114,16 +118,20 @@ public class Manage {
         }
     }
 
-
     // 查询
     public void query(String name) {
+        boolean isFind = true;
         if(students.size() == 0) {
             System.out.println("抱歉,没有找到该学生!");
         }
         for (int i = 0; i < students.size(); i++) {
             if(students.get(i).getName().equals(name)) {
+                isFind = false;
                 System.out.println(students.get(i).toString());
             }
+        }
+        if(isFind) {
+            System.out.println("没有找到该学生,请确认输入的学生名字是否正确!");
         }
     }
 

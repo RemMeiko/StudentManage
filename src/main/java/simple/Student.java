@@ -1,3 +1,5 @@
+package simple;
+
 public class Student {
     private String name;
     private String id;
@@ -5,6 +7,8 @@ public class Student {
     private int math;
     private int english;
     private int total;
+
+    public Student() {}
 
     public Student(String Sname,String SID,int Schinese,int Smath,int Senglish) {
        this.name = Sname;

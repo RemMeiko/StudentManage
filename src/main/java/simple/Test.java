@@ -1,3 +1,5 @@
+package simple;
+
 public class Test {
     public static void main(String[] args) {
         int[] a = {3,5,6,7,4,56,34,45,3,2};
